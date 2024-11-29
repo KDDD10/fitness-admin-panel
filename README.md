@@ -1,7 +1,7 @@
 
 # **Fitness - Your Gateway to Health and Energy**
 
-**Fitness** is a cutting-edge platform designed to simplify the purchase of exercise nutrition products, Fitness Plans and gym accessories. Built with modern technology, it provides a seamless shopping experience, helping customers achieve their fitness goals with ease.
+This is a cutting-edge platform designed to simplify the purchase of exercise nutrition products, Fitness Plans and gym accessories. Built with modern technology, it provides a seamless shopping experience, helping customers achieve their fitness goals with ease.
 
 ![Fitness Banner](https://res.cloudinary.com/dcb1zsjuk/image/upload/v1732817015/Screenshot_2024-11-28_230225_bgtigu.png)
 
@@ -138,6 +138,50 @@ Ensure secure storage of sensitive credentials for production.
 
 - **Manual Testing:**  
   Conducted across all devices to ensure responsiveness and usability.
+
+---
+
+## **Development Tools**
+
+#### Languages
+
+- [Python](https://www.python.org/)
+- [JavaScript](https://www.javascript.com/)
+- [Bash](https://www.gnu.org/software/bash/)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+#### Libraries and Frameworks
+
+- 
+
+
+#### Databases and Storage
+
+- [Heroku](https://www.heroku.com/): Used in production
+- [PostgresSQL](https://www.postgresql.org/): Used in production 
+
+
+#### Development Tools
+
+- Git: Version controlling
+- Github: Repository hosting
+- Git Pod: For Integration
+- Debug toolbar: For debugging
+- VS Code: Main Editor for development
+- Chrome Dev Tools
+- Drawio: For creating the diagrams 
+
+---
+
+## **Credits**
+
+- Code Institute 
+- Code Institute Stack Channel
+- CS Dojo
+- Django Documentation
+- Stack Overflow
+- Udemy
 
 ---
 

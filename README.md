@@ -173,6 +173,92 @@ To ensure the website ranks high on search engines and attracts organic traffic,
 
 By implementing these strategies, the website is optimized to rank higher in search engine results, drive organic traffic, and provide an excellent user experience.
 
+---
+
+## ** Bugs / Issues and solutions**
+
+### **1. Exercise Plan Add to Cart Issue**
+
+**Issue:**  
+Initially, users could add multiple exercise plans to the cart, which was unintended as only one plan was required per user.
+
+**Solution:**  
+The `add_cart` function was updated to restrict users to one exercise plan at a time. Additionally, the `context.py` logic for `exercise_plans_dic` was modified to ensure this behavior.
+
+---
+
+### **2. Image Not Displaying for Products Without Media**
+
+**Issue:**  
+If a product or service did not have an associated image, no placeholder image was shown.
+
+**Solution:**  
+The issue was due to the absence of a `noimage.png` placeholder in the media folder. Adding this file and updating the template to display it when `product.image` was empty resolved the problem.
+
+---
+
+### **3. User Sign-Up Error in AUTH_PASSWORD_VALIDATORS**
+
+**Issue:**  
+An error occurred during user registration due to splitting lines in `settings.py` using a backslash to avoid exceeding line length limits.
+
+**Solution:**  
+Switching from backslashes to string concatenation using triple quotes allowed the validators to remain readable and functional.
+
+---
+
+### **4. Button Disable for Duplicate Exercise Plan**
+
+**Issue:**  
+The "Add to Cart" button for exercise plans did not disable after adding a plan. Instead, users received a toast message.
+
+**Solution:**  
+A disable function was implemented for the button. Now, when a user adds an exercise plan, the button becomes disabled, and an informational toast message is shown for better UX.
+
+---
+
+### **5. Stripe Webhook Error: 500**
+
+**Issue:**  
+A `payment_intent.succeeded` webhook test from Stripe returned a 500 error, while real orders completed successfully.
+
+**Solution:**  
+The issue was isolated to the `handle_payment_intent_succeeded` logic, specifically in referencing cart metadata. Tutor support confirmed the problem was isolated to testing and advised focusing on live functionality, which worked as expected.
+
+---
+
+### **6. Contact Form Email Address Missing**
+
+**Issue:**  
+When users submitted a query through the Contact Us form, the store owner’s email received the query but did not include the user’s email address.
+
+**Solution:**  
+The user’s email was added to the subject line of the email, allowing the store owner to respond to queries effectively. This workaround was implemented due to Gmail's strict security policies.
+
+---
+
+### **7. Total Not Updating for Cart Operations**
+
+**Issue:**  
+The cart total did not update after adding, deleting, or modifying items.
+
+**Solution:**  
+The root cause was missing `default_app_config` in `checkout/__init__.py`. Adding `default_app_config = 'checkout.apps.CheckoutConfig'` resolved the issue, ensuring totals updated dynamically.
+
+---
+
+### **8. HTTP 303 Error in Link Response**
+
+**Issue:**  
+An HTTP 303 error was returned when attempting to process certain API responses, causing a failure in expected workflows.
+
+**Solution:**  
+The error occurred due to an incorrect redirection handling mechanism. Updating the API request headers to include the correct `Content-Type` and explicitly handling the 303 redirect using `axios` for frontend requests resolved the issue. Additionally, the backend was updated to ensure proper `Location` headers were set for redirect responses.
+
+---
+
+These bugs and their solutions highlight challenges faced during development and the strategies used to overcome them effectively. Each fix improved the platform’s stability and user experience.
+
 ## **Development Setup**
 
 ### **Clone and Install**

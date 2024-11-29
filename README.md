@@ -12,7 +12,7 @@ The link to the live site is here: https://fitness-ed493.web.app/
 
 Fitness is designed to empower health-conscious individuals by offering a range of high-quality fitness products. From protein supplements to gym accessories, the platform ensures secure transactions, fast performance, and user-friendly navigation.
 
-The goal is to provide a reliable e-commerce experience that supports fitness enthusiasts in maintaining an active and healthy lifestyle.
+The website's primary goal is to create a safe platform for a gym/fitness center that makes it simple for company owners to run their operations and for customers to buy exercise gear and subscriptions. To make the application safe, quick, and easy to use, it was created using an MVC architectureand contemporary technologies like Python3, Django, Bootstrap, HTML5, SCSS, CSS3, JavaScript, and PostgreSQL.
 
 ---
 
@@ -56,19 +56,7 @@ The goal is to provide a reliable e-commerce experience that supports fitness en
 - Store user contact information in the database.
 - Use pytest, pytest-django, pytest-factoryboy, and pytest-html to test the application's backend.
 
-## **Diagrams Used in Development**
-
-### **1. Application Architecture Diagram**
-
-This diagram showcases the overall flow and structure of the application, illustrating interactions between the frontend, backend, database, and external services like Cloudinary and Firebase.
-
-### **2. Database Schema**
-
-The database schema highlights the relationships between different entities, ensuring efficient data storage and retrieval.
-
-### **3. Deployment Workflow**
-
-This diagram represents the step-by-step deployment process, including frontend builds, Firebase hosting, and backend API setup.
+---
 
 ## **Key Features**
 

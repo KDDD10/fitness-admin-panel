@@ -5,6 +5,8 @@ This is a cutting-edge platform designed to simplify the purchase of exercise nu
 
 ![Fitness Banner](https://res.cloudinary.com/dcb1zsjuk/image/upload/v1732817015/Screenshot_2024-11-28_230225_bgtigu.png)
 
+The link to the live site is here: https://fitness-ed493.web.app/
+
 ---
 
 ## **Purpose**
@@ -42,34 +44,58 @@ The goal is to provide a reliable e-commerce experience that supports fitness en
 ### **Project Goals**  
 - Build a fast and secure e-commerce platform for fitness products.  
 - Enhance user experience with a clean and intuitive interface.  
-- Offer seamless integration of payment and delivery systems.  
+- Offer seamless integration of payment and delivery systems. 
+- Give users the option to register and access the application. Create an admin access panel to manage the company and the clients.
+- Permit clients to buy fitness items and subscriptions.
+- Put in place a Stripe payment system so that clients may pay for their fitness goods and memberships.
+- Permit consumers to leave reviews for exercise gear. Create a blog to provide articles and advice about fitness.
+- Permit clients to write blog entries to share their achievements.
+- Create a contact form so that clients can get in touch with the company's owner.
+- Create a website that is responsive and easy to use. 
 
 ### **Business Goals**  
 - Increase customer retention through personalized services.  
 - Expand the product range as demand grows.  
 - Maintain consistent performance to support scalability.
+- By offering a more customized experience, improving customer service.
+- Give clients top-notch instruction from the best teachers.
+- To make the program easier to use, provide an intuitive and user-friendly user interface.
+- Improve the online buying experience for clients to keep them coming back.
 
----
+## **Strategies**
 
-## **Tech Stack**
+- Build a thorough and safe backend architecture using the MVC design pattern.
+- Include a SQL(relational) database to store the necessary data.
+- The application's backend is developed using Django and Python 3.
+- For the application's front end, use HTML5, SCSS, CSS3, Javascript, JQuery, and Bootstrap.
+- Allow people to register for an account and access the application.
+- Utilize the application's front end to manage all user input and interaction.
+- Use django-crispy-forms to make the forms more user-friendly and Django forms to process and validate user input.
+- Create an intuitive, responsive, and user-friendly user interface with Bootstrap and HTMX.
+- Use the Stripe API and Django-Stripe to enable clients to pay for their fitness products and subscriptions.
+- To enable customers to manage their accounts, orders, and subscriptions, create a customer dashboard.
+- Store user contact information in the database.
+- Use pytest, pytest-django, pytest-factoryboy, and pytest-html to test the application's backend.
 
-- **Frontend:**  
-  - React  
-  - Tailwind CSS  
-  - Ant Design  
+## **User Stories**
 
-- **Backend:**  
-  - Python  
-  - Django  
+- **As a store owner:**
+1. As a store owner, I want a simple responsive user friendly website.
+2. As a store owner, I want to add new products/services in the store.
+3. As a store owner, I want to update existing products/services in the store.
+4. As a store owner, I want to delete a product/service from the store.
 
-- **Media Management:**  
-  - Cloudinary  
-
-- **Database:**  
-  - PostgreSQL  
-
-- **Hosting:**  
-  - Firebase  
+- **As a store owner:**
+1. As a user, I expect the website to be easy to navigate.
+2. As a user, I expect the website to be responsive on all devices.
+3. As a user, I want to be able to search for all items in the store.
+4. As a user, I want to be able to see all the detailed information on each product.
+5. As a user, I want to create an account.
+6. As a user, I want to add items to the shopping basket.
+7. As a user, I want to be able to make secure payments.
+8. As a user, I want to get in touch with the store owner.
+9. As a user, I wat to add a review.
+10. As a user, I want to be able to update my profile information.
 
 ---
 
@@ -122,14 +148,6 @@ Ensure secure storage of sensitive credentials for production.
 
 ---
 
-## **Future Enhancements**
-
-- **Nutrition Plans:** Add subscription-based personalized meal and workout plans.  
-- **Enhanced Admin Panel:** Advanced analytics for sales and customer engagement.  
-- **Community Features:** Forums and blogs for fitness enthusiasts.  
-
----
-
 ## **Testing**
 
 - **Unit Tests:**  
@@ -153,14 +171,19 @@ Ensure secure storage of sensitive credentials for production.
 
 #### Libraries and Frameworks
 
-- 
-
+- [Django](https://www.djangoproject.com/)
+- [Dj-stripe](https://dj-stripe.dev/2.8/)
+- [Django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+- [Ant Design](https://ant.design/)
+- [Factoryboy](https://factoryboy.readthedocs.io/en/stable/)
+- [React](https://react.dev/)
+- [Pytest](https://docs.pytest.org/en/latest/) 
 
 #### Databases and Storage
 
-- [Heroku](https://www.heroku.com/): Used in production
+- [Cloudinary](https://cloudinary.com/): Used in production
+- [Firebase](https://firebase.google.com/docs/hosting): Used in production
 - [PostgresSQL](https://www.postgresql.org/): Used in production 
-
 
 #### Development Tools
 
@@ -170,7 +193,14 @@ Ensure secure storage of sensitive credentials for production.
 - Debug toolbar: For debugging
 - VS Code: Main Editor for development
 - Chrome Dev Tools
-- Drawio: For creating the diagrams 
+
+---
+
+## **Future Enhancements**
+
+- **Nutrition Plans:** Add subscription-based personalized meal and workout plans.  
+- **Enhanced Admin Panel:** Advanced analytics for sales and customer engagement.  
+- **Community Features:** Forums and blogs for fitness enthusiasts.  
 
 ---
 
